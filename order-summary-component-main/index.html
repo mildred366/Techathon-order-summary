@@ -10,6 +10,11 @@
 
   <title>Frontend Mentor | Order summary card</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Nosifer&family=Prosto+One&display=swap"
+    rel="stylesheet">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     * {
@@ -26,23 +31,110 @@
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
+
+    .container {
+      font-family: 'Red Hat Display', sans-serif;
+      border: 2px solid pink;
+      width: 450px;
+    }
+
+    #Hero {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+
+    .wrapper {
+      border-radius: 100px;
+    }
+
+    .card {
+      padding: 30px;
+    }
+
+    .order {
+      text-align: center;
+    }
+
+    #orderP {
+      padding: 15px 27px 25px 27px;
+    }
+
+    .plan {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: hsl(225, 100%, 98%);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .Music {
+      display: flex;
+      align-items: center;
+    }
+
+    .annual {
+      margin-left: 15px;
+    }
+
+    a {
+      padding-right: 10px;
+      color: hsl(245, 75%, 52%);
+    }
+
+    .cancel {
+      margin-top: 30px;
+    }
+
+    button {
+      background-color: hsl(245, 75%, 52%);
+      border: none;
+      color: white;
+      width: 385px;
+      height: 40px;
+      border-radius: 5px;
+      font-size: medium;
+      box-shadow: hsl(245, 75%, 52%);
+    }
+
+    #cancelOrder {
+      text-align: center;
+      padding-top: 30px;
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
-        <h3> Order Summary </h3>
-        <p>
-          You can now listen to millions of songs, audiobooks, and podcasts on any
-          device anywhere you like!
-        </p>
-          <img src="./images/icon-music.svg" alt="music">
-          <p>Annual Plan</p>
-          <p>$59.99/year</p>
+    <div class="wrapper">
+      <img src="./images/illustration-hero.svg" alt="Hero image" id="Hero">
+      <div class="card">
+        <div class="order">
+          <h2> Order Summary </h2>
+          <p id="orderP">
+            You can now listen to millions of songs, audiobooks, and podcasts on any
+            device anywhere you like!
+          </p>
+        </div>
+        <div class="plan">
+          <div class="Music">
+            <img src="./images/icon-music.svg" alt="music">
+            <div class="annual">
+              <h4 style="padding-bottom: 5px;">Annual Plan</h4>
+              <p>$59.99/year</p>
+            </div>
+          </div>
           <a href="#">Change</a>
-        <button>Proceed to Payment</button>
-        <p> Cancel Order </p>
+        </div>
+        <div class="cancel">
+          <button>Proceed to Payment</button>
+          <p id="cancelOrder"> Cancel Order </p>
+        </div>
+      </div>
+    </div>
   </div>
+
 
 
   <!-- <div class="attribution">
