@@ -33,7 +33,7 @@ html {
     background-color: white;
     border-radius: 15px;
     margin: auto;
-   
+
 }
 
 #Hero {
@@ -54,6 +54,7 @@ html {
 
 #orderP {
     padding: 15px 27px 25px 27px;
+    color: grey;
 }
 
 .plan {
@@ -78,7 +79,9 @@ a {
     padding-right: 10px;
     color: hsl(245, 75%, 52%);
 }
-
+p{
+    color: grey;
+}
 .cancel {
     margin-top: 30px;
 }
@@ -97,4 +100,53 @@ button {
 #cancelOrder {
     text-align: center;
     padding-top: 30px;
+}
+
+@media only screen and (max-width:375px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    h2 {
+        margin: 0 30px 0 30px;
+    }
+
+    #orderP {
+        padding: 10px 10px 25px 10px;
+        color: grey;
+    }
+
+    p {
+        color: grey;
+    }
+
+    body {
+        /* padding:10px; */
+    }
+
+    .plan {
+        padding: 10px;
+    }
+
+    a {
+        padding-right: 2px;
+    }
+.card{
+    padding: 20px;
+}
+    h4 {
+        padding-bottom: 0px;
+    }
+
+    .container {
+        width: 320px;
+        padding-top: 0;
+    }
+
+    button {
+        width: 280px;
+        margin-right: 20px;
+    }
 }
